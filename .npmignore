@@ -1,0 +1,9 @@
+src/
+tsconfig.json
+tsup.config.ts
+*.log
+.DS_Store
+.env
+.rag
+node_modules
+

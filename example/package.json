@@ -1,0 +1,19 @@
+{
+  "name": "nextjs-rag-example",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "nextjs-rag init ./docs && next build",
+    "start": "next start",
+    "reindex": "nextjs-rag reindex ./docs"
+  },
+  "dependencies": {
+    "next": "^14.0.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "nextjs-rag": "^1.0.0",
+    "openai": "^4.0.0"
+  }
+}
+
