@@ -15,7 +15,7 @@ npm install nextjs-rag
 # Set API key (or add it to .env)
 export OPENAI_API_KEY=sk-...
 
-# Index your docs
+# Add any text-based files a folder, like ./docs, and then index them
 npx nextjs-rag init ./docs
 ```
 
@@ -53,8 +53,9 @@ git add .rag/sqlite.db
   }
 }
 ```
-
 Works on Vercel, Netlify, and any Node.js host. Just add `OPENAI_API_KEY` to your environment variables.
+
+Note: nextjs-rag does not yet support images, PDFs, or videos without preprocessing.
 
 ---
 
