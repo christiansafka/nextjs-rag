@@ -1,6 +1,6 @@
 {
   "name": "nextjs-rag",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Dead simple RAG for Next.js with SQLite vector storage",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",

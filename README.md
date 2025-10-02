@@ -55,6 +55,8 @@ git add .rag/sqlite.db
 ```
 Works on Vercel, Netlify, and any Node.js host. Just add `OPENAI_API_KEY` to your environment variables.
 
+**Serverless Support (Vercel/Lambda):** The package automatically detects serverless environments and uses `/tmp` for the database at runtime (since `/var/task` is read-only). On cold starts, the database is copied from your deployment bundle to `/tmp`. No manual configuration needed!
+
 Note: nextjs-rag does not yet support images, PDFs, or videos without preprocessing.
 
 ---
