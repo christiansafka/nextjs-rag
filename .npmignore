@@ -1,9 +1,36 @@
+# Source files (we publish the dist folder)
 src/
+*.ts
+!*.d.ts
+
+# Config files
 tsconfig.json
 tsup.config.ts
-*.log
-.DS_Store
-.env
-.rag
-node_modules
 
+# Development files
+.git/
+.gitignore
+node_modules/
+example/
+
+# Build artifacts
+*.log
+*.map
+
+# Testing
+coverage/
+.nyc_output/
+
+# Environment
+.env
+.env.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
