@@ -12,7 +12,7 @@ Leave a star! 🌟
 # Install
 npm install nextjs-rag
 
-# Set API key
+# Set API key (or add it to .env)
 export OPENAI_API_KEY=sk-...
 
 # Index your docs
@@ -27,7 +27,7 @@ import { NextResponse } from 'next/server';
 
 export async function POST(req: Request) {
   const { question } = await req.json();
-  const result = await queryRag(question, { topK: 5 });
+  const result = await queryRag(question, { topK: 5 }); // get top 5 results
   
   return NextResponse.json({
     context: result.text,       // Combined context from relevant chunks
